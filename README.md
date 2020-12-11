@@ -1,9 +1,9 @@
 # terraform-iaac-august-2020
 
-Creates GKE Cluster
+# Creates GKE Cluster
 
-Copy paste the below code
-
+# Copy paste the below code
+```
 module "cluster" {
     source                      = "Alina-2013/kubernetes-engine/google"
     project                     = var.project_id
@@ -13,7 +13,9 @@ module "cluster" {
     machine_type                = "e2-medium"
     node_count                  = 1
 }
-Run
-
+```
+# Run
+```
 terraform init 
 terraform apply 
+```
